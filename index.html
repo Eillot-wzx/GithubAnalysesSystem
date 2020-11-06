@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-ch">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>GithubAnalysesSystem</title>
+</head>
+<body>
+
+<div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">贡献者分析</span>
+    </nav>
+
+    <!-- 搜索区 -->
+    <div class="row">
+        <div class="col-8">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">请输入仓库地址：https://github.com/</span>
+                </div>
+                <input type="text" class="form-control" placeholder="owner" aria-label="owner" id="ownerInput"
+                       aria-describedby="owner" value="pingcap">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">/</span>
+                </div>
+                <input type="text" class="form-control" placeholder="repo" aria-label="repo" id="repoInput"
+                       aria-describedby="repo" value="tidb">
+            </div>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-primary btn-block" id="queryButton">查询</button>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-danger btn-block" id="resetButton">清空</button>
+        </div>
+    </div>
+
+    <!-- 信息展示区-->
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">贡献者</th>
+            <th scope="col">主页</th>
+            <th scope="col">类型</th>
+            <th scope="col">贡献</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
