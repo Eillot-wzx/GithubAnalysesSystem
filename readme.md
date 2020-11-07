@@ -4,7 +4,7 @@
 
 
 小作业考察点：
- - 独立运维部署网站能力
+- 独立运维部署网站能力
 - 使用 github 能力
 - 前端技术
 - 代码能力和风格
@@ -13,7 +13,7 @@
 
 ## 项目展示
 
-![show](img/show.png)
+![show](./img/show.png)
 
 ## 技术栈
 
@@ -35,7 +35,9 @@ sudo systemctl start nginx
 # 安装git
 sudo yum -y install git
 
-/usr/share/nginx/html
-
+# 下载代码
+cd /usr/share/nginx/html
+git clone https://github.com/Eillot-wzx/GithubAnalysesSystem.git
 ```
 
+演示站点: http://116.62.45.151/GithubAnalysesSystem/index.html
