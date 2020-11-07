@@ -20,9 +20,9 @@ function queryData(url) {
                     "                     style=\"height: 38px;width: 38px; border-radius: 50%\">\n" +
                     "                <label>" + value['login'] + "</label>\n" +
                     "            </th>\n" +
-                    "            <td><a href=\"" + value['html_url'] + "\">" + value['html_url'] + "</a></td>\n" +
-                    "            <td>" + value['type'] + "</td>\n" +
                     "            <td>" + value['contributions'] + "</td>\n" +
+                    "            <td>" + value['type'] + "</td>\n" +
+                    "            <td><a href=\"" + value['html_url'] + "\">" + value['html_url'] + "</a></td>\n" +
                     "        </tr>"
                 $("tbody").append(dom);
             }
