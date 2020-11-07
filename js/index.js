@@ -1,3 +1,4 @@
+// 查询 GitHubAPI 渲染数据
 function queryData(url) {
     if (url.indexOf('?') == -1) {
         // TODO check url
@@ -67,7 +68,7 @@ $("#resetButton").click(function () {
 
 $(window).on('scroll', function () {
     if (scrollTop() + windowHeight() >= (documentHeight() - 50/*滚动响应区域高度取50px*/)) {
-        // alert(222) # 在这里完善一下 滚动条的防抖策略
+        //在这里完善一下 滚动条的防抖策略 TODO 移动端滚动条失效需要解决
         if (nextUrl && nextUrl !== "") {
             queryData(nextUrl);
         }
