@@ -1,5 +1,6 @@
 function queryData(url) {
     if (url.indexOf('?') == -1) {
+        // TODO check url
         // 第一次需要将数据展示出来
         $("table").show();
         // 将展示区域清空
@@ -7,9 +8,8 @@ function queryData(url) {
         nextUrl = ""
     }
 
-
     $.ajax({
-        // url: "https://api.github.com/repos/" + owner + "/" + repo + "/contributors" + page === 0 ? "" : "?page=" + page,
+        // TODO error Message and add AuthToken
         url: url,
         async: false,
         success: function (data, textStatus, jqXHR) {
